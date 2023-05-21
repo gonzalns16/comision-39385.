@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Introduccion a los pack de racursos</title>
+</head>
+<body>
+    <header id="color">
+        <h1 class="t1-320">Introduccion a los pack de recursos</h1>
+        <br>
+        <br>
+        <ol class="no-link">
+            <li>
+                <a href="../index.html"><h3 class="t2">Inicio</h3></a>
+                <a href="../pages/Resource_1.html"><h3 class="t2">Introduccion a los pack de recursos</h3></a>
+                <a href="../pages/Resource_2.html"><h3 class="t2">Como crear textura</h3></a>
+            </li>
+        </ol>
+        <br>
+        <br>
+        <br>
+    </header>
+    <main>
+        <section>
+            <div class="txt">
+                <p class="p3">
+                    Antes de crear tu primer complemento para Minecraft: Bedrock Edition, deberás crear un pack para
+                    guardar tu contenido personalizado. Hay dos tipos de packs que puede hacer un creador: los packs de
+                    recursos y los packs de comportamiento. <br> Un pack de recursos es una estructura de carpetas que
+                    contendrá todos tus modelos, sonidos, texturas y otros contenidos personalizados. En este tutorial,
+                    aprenderás a cambiar el color de la tierra a un verde brillante. <img src="../assets/img/Resource.1.1.jpg" class="img-art" alt="">
+                </p>
+                <p class="p3">
+                    Cómo crear el pack de recursos <br>
+                    Para que Minecraft encuentre y use tus archivos de recursos, tienes que organizar las carpetas y los
+                    archivos en una estructura particular. En este tutorial, aprenderás a crear esta estructura de
+                    carpetas y archivos. <img src="../assets/img/resource.1.2.png" class="img-art" alt="">
+                </p>
+                <p class="p3">Crea una carpeta <br>
+                    En esta sección, primero crearás una carpeta llamada My_RESOURCE_Pack. <br> Bueno, no tienes que
+                    llamarla así. De hecho, puedes darle el nombre que quieras, pero las otras deben tener exactamente
+                    el mismo nombre que figura en este tutorial para que Minecraft sepa dónde buscarlas. <br>
+                    Abre la carpeta com.mojang. <br>
+                    Haz doble clic en la carpeta development_resource_packs para abrirla. <br>
+                    Crea una carpeta nueva y llámala My_RESOURCE_Pack. <br>
+                    Haz doble clic en la carpeta
+                    My_RESOURCE_Pack para abrirla. <img src="../assets/img/resource1.3.png" class="img-art" alt="">
+                </p>
+                <p class="p3">
+                    Crea un archivo de manifiesto <br>
+                    Para cargar un pack de recursos en Minecraft, deberás crear un archivo de manifiesto. El archivo de
+                    manifiesto es un archivo JSON que contiene la siguiente información: <br>
+                    Descripción: es la descripción del juego sobre lo que hace el pack de recursos. <br>
+                    Nombre: El nombre del pack de recursos en el juego. <br>
+                    UUID: El identificador único universal. <br>
+                    Versión: La versión del pack de recursos. <br>
+                    Versión mínima del motor: es la versión de Minecraft necesaria para que funcione este pack. <br>
+                    Minecraft analizará la información del archivo de manifiesto y la mostrará en la sección
+                    Complementos del juego. Dentro del archivo, la información se dividirá en dos secciones distintas:
+                    encabezado y módulos. La sección de encabezado contendrá la información general del pack y la
+                    sección de módulos contendrá la información de los packs dedicados. <br>
+                    Haz clic derecho en la ventana del Explorador y selecciona Nuevo > Documento de texto. <br>
+                    Llámalo manifest.json. <br>
+                    Deberás cambiar la extensión del archivo de .txt a .json. Si en la ventana del Explorador no se
+                    muestra las Extensiones de nombre de archivo, puedes habilitarlas en la pestaña Ver. <img src="../assets/img/rosource1.4.png" class="img-art" alt="">
+                </p>
+                <p class="p3">
+                    Haz doble clic en el archivo manifest.json para abrirlo en un editor de texto. <br>
+                    Copia y pega el siguiente código en tu archivo. <br> <img src="../assets/img/resource1.5.png" class="img-art" alt="">
+                </p>
+                <p class="p3">
+                    UUID <br>
+                    El identificador único universal, o UUID, es un número único que se usa para identificar diferentes
+                    software. En Minecraft, el UUID se usa para definir un pack específico y evitar que cualquier
+                    software duplicado cause problemas. Para el encabezado y los módulos, deberás ingresar dos números
+                    de UUID diferentes en cada campo "uuid" entre las comillas. Puedes usar un generador de UUID online
+                    como... <br>
+                    <a href="https://www.uuidgenerator.net/">https://www.uuidgenerator.net/</a> <br> <img src="../assets/img/resource1.6.png" class="img-art" alt="">
+                </p>
+                <p class="p3">
+                    Copia y pega un UUID en la sección de encabezado. Deberás pegar el UUID en el campo "uuid":"" entre
+                    las comillas ("") para que se lea correctamente. <br>
+                    Actualiza la página web para generar un UUID nuevo que podrás usar en la sección de módulos.
+                    Copia y pega el UUID nuevo en la sección de módulos, en el campo "uuid" entre las comillas. <br>
+                    Guarda el archivo manifest.json.
+                </p>
+                <p class="p3">
+                    Cómo cambiar el bloque de tierra <br>
+                    Con el archivo de manifiesto completo, ahora puedes comenzar a agregar contenido personalizado a
+                    Minecraft. Comencemos aplicando una textura nueva al bloque de tierra de la versión original. La
+                    primera parte del proceso implica crear una estructura de carpetas para almacenar la textura. <br>
+                    En el Explorador de archivos, dentro de la carpeta My_RESOURCE_Pack, crea una carpeta y llámala
+                    textures. <br>
+                    Haz doble clic en la carpeta textures para abrirla. <br>
+                    Dentro de la carpeta "textures", crea una carpeta y llámala blocks. <br>
+                    Haz doble clic en la carpeta blocks para abrirla.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2 class="t3">Visitanos</h2>
+        <div class="grid-container">
+            <div class="grid-item"><a href="#color"><img src="../assets/img/flechatop.png" class="grid-item1" alt="logo felcha para arriba"></a></div>
+            <div class="grid-item"><a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/fb.png" class="grid-item1" alt="logo de facebook"></a></div>
+            <div class="grid-item"><a href="https://twitter.com/" target="_blank"><img src="../assets/img/tw.png" class="grid-item1" alt="logo de twitter"></a></div>  
+            <div class="grid-item"><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/ig.png" class="grid-item1" alt="logo de instagram"></a></div>
+        </div>
+    </footer>
+    
+</body>
+</html>
