@@ -1,0 +1,6 @@
+@mixin papafrita{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgba(0, 0, 0, 0.450);
+    padding: 5px;
+}

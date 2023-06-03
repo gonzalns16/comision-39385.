@@ -6,12 +6,12 @@ main {
 img{
     width: 720px;
     border-radius: 40px;
-    border: solid 8px black;
+    border: solid 8px $color_negro;
     margin: 15px;
     align-items: center;
     display: flex;
     flex-direction: column;
     }
 .link-centrales2 {
-    width: 260px;
+    width: 300px;
 }

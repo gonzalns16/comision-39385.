@@ -1,130 +1,88 @@
-@media (max-width: 375px){
-    body{
+@media (max-width: 375px) {
+    body {
         background-image: url(../assets/img/new123.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
     }
-    .color{
+
+    .color {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 5px;
-        
+
     }
-    h1{
+
+    h1 {
         font-size: 25px;
         font-family: 'Nabla', cursive;
     }
-    p{
+
+    p {
         font-size: 25px;
         font-family: 'Nabla', cursive;
     }
-    .link-centrales ul li{
+
+    .link-centrales ul li {
         list-style: none;
         border-radius: 40px;
         text-align: center;
     }
-    footer{
+
+    footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 5px;
     }
-        .txt-footer{
+
+    .txt-footer {
         font-size: 8px;
         padding: 15px;
-        }
-        footer div{
-            color: wheat;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            
-        }
-        /*Index*/
-        /*Comienzo de Behavior_1*/
-    
-        .t1-320{
-            font-family: 'Nabla', cursive;
-            display: flex;
-            justify-content: center;
-            font-size: 35px;
-            padding: 15px;
-        }
-        .t2{
-            font-family: 'Nabla', cursive;
-            display: flex;
-            justify-content: center;
-            font-size: 22px;
-            border-style: groove;
-            border-color: white;
-            background-color: rgba(0, 0, 0, 0.450);
-        }
-        .main-global ol li a{
-            text-decoration: none;
-        }
-        .main-global{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding: 10px;
-        }
-        .navbar{
-            background-color: rgba(0, 0, 0, 0.500);
-            padding: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: antiquewhite;
-        }
-        .navbar2{
-            padding:25px;
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-    
-        }
-        h2{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 15px;
-        }
-        .img320{
-            margin-left: 35px;
-            width: auto;
-            height: auto;
-        }
-    
-        .up img{
-            height: 100px;
-            float:right;
-            margin: 5px;    
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            background-color: rgba(0, 0, 0, 0.450);
-            padding: 5px;
     }
-    .t3{
+
+    footer div {
+        color: wheat;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    /*Index*/
+    /*Comienzo de Behavior_1*/
+
+    .t1-320 {
+        font-family: 'Nabla', cursive;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    .t2 {
         font-family: 'Nabla', cursive;
         display: flex;
         justify-content: center;
         font-size: 22px;
+        border-style: groove;
+        border-color: white;
+        background-color: rgba(0, 0, 0, 0.450);
     }
-    .grid-item1{
-        display: grid;
-        grid-template-rows: auto;
-        width: 45px;
-        
-    }
-    /*Terminacion de Behavior 1*/
-    /*Comienzo de Behavior 2*/
-    .no-link li a{
+
+    .main-global ol li a {
         text-decoration: none;
     }
-    .txt p{
+
+    .main-global {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar {
         background-color: rgba(0, 0, 0, 0.500);
         padding: 5px;
         display: flex;
@@ -132,8 +90,67 @@
         justify-content: center;
         color: antiquewhite;
     }
-    
-    .p3{
+
+    .navbar2 {
+        padding: 25px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+    }
+
+    .img320 {
+        margin-left: 35px;
+        width: auto;
+        height: auto;
+    }
+
+    .up img {
+        height: 100px;
+        float: right;
+        margin: 5px;
+    }
+
+    .grid-container {
+        @include papafrita;
+    }
+
+    .t3 {
+        font-family: 'Nabla', cursive;
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+    }
+
+    .grid-item1 {
+        display: grid;
+        grid-template-rows: auto;
+        width: 45px;
+
+    }
+
+    /*Terminacion de Behavior 1*/
+    /*Comienzo de Behavior 2*/
+    .no-link li a {
+        text-decoration: none;
+    }
+
+    .txt p {
+        background-color: rgba(0, 0, 0, 0.500);
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: antiquewhite;
+    }
+
+    .p3 {
         background-color: rgba(0, 0, 0, 0.450);
         background-size: cover;
         display: flex;
@@ -143,9 +160,11 @@
         font-size: 13px;
         color: aliceblue;
     }
-    .img-art{
+
+    .img-art {
         width: 320px;
         margin-left: auto;
     }
-    }
+}
+
 /*Media de 375px terminado con sus 3 html*/
